@@ -376,10 +376,10 @@ body{
 .team .team_member .team_img{
   position: absolute;
   top: -50px;
-  left: 50%;
+  left: 30%;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 10px;
   background: #fff;
 }
 
@@ -396,21 +396,28 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(Images/pexels-miguel-á-padriñán-255379.jpg);
+  background: url(images/50-Minimalist-iPhone-Wallpapers-5.jpg);
   background-size: cover;
+  mix-blend-mode: luminosity;
 }
 .contact .content {
   max-width: 800px;
   text-align: center;
   margin-left: -800px;
+  color: #0a0101;
 }
 .contact .content h2 {
   font-size: 36px;
   font-weight: 500;
-  color: rgb(156, 36, 36);
+  color: rgb(211, 203, 203);
+  padding-bottom: -50px;
+}
+.contact .content p{
+  color: black;
 }
 .content-section .social {
   margin: 40px 40px;
+  color: #e6d8d8;
 }
 .content-section .social i {
   color: #a52a2a;
@@ -418,7 +425,7 @@ body{
   padding: 0px 10px;
 }
 .content-section .social i:hover {
-  color: #3d3d3d;
+  color: #581010;
 }
 .content-section .social {
   text-align: center;
@@ -460,12 +467,12 @@ body{
 }
 .container .contactInfo .box .text h3 {
   font-weight: 800;
-  color: rgba(245, 245, 245, 0.514);
+  color: rgba(22, 10, 10, 0.527);
 }
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.411);
+  background: rgba(110, 109, 96, 0.651);
   margin-left: 00px;
 }
 .contactForm h2 {
@@ -484,7 +491,7 @@ body{
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 3px solid #333;
   outline: none;
   resize: none;
 }
@@ -508,8 +515,8 @@ body{
 }
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
-  background: #00bcd4;
-  color: rgba(124, 68, 68, 0.863);
+  background: #662828;
+  color: rgba(167, 167, 167, 0.863);
   border: none;
   cursor: pointer;
   font-size: 18px;
