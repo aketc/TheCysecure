@@ -1,12 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/pexels-cristian-dina-1851415.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 </head>
 <body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open 24/7</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:100px">the<br>Cysecure</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Lakehub,Kisumu, 2022</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CYSECURE</span></h5>
+    <p>The Cysecure was founded  by Ms. Priscilla Otieno a recent graduate from Maasai Mara university with a background in Agricultural Economics & Resource Management</p>
+    <p>In addition to reporting cyber bully cases, we serve provide learning resources in regards to internet & Cyber Security.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Stay Internet safe, it;s good for your general health never too early, nor too late.</i></p>
+      <p>CEO Priscillah A. O</p>
+    </div>
+    <img src="Images/logo_size-removebg-preview.png" style="width:50%;max-width:700px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> Everyday.</p>
+    <p><strong>Address:</strong> Lakehub, Milimani,Kisumu</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Report');" id="myLink">
+        <div class="w3-col s6 tablink">Report</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Learn</div>
+      </a>
+    </div>
+
+    <div id="Report" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Report Case</h5>
+      <p class="w3-text-grey">Enter Details and attach evidence of the situation(screenshots)</p><br>
     
-</body>
-</html>
+      <h5>Withdraw report</h5>
+      <p class="w3-text-grey">In any case ne changes their mind</p><br>
+    
+    </div>
+
+    <div id="Learn" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Digital Security</h5>
+      <p class="w3-text-grey">How to avoid bullying and being bullied/p><br>
+    
+      <h5>Cyber Security</h5>
+      <p class="w3-text-grey">This is broad, gear up</p><br>
+    
+    <img src="Images/HAND.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us here.</p>
+    <!-- <img src="/w3images/map.jpg" class="w3-image" style="width:100%"> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.811031088531!2d34.75425841426966!3d-0.10952233550407894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa4ed4766f207%3A0xd545cde738268ce6!2sLakeHub!5e0!3m2!1sen!2sde!4v1646801032891!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <p><span class="w3-tag">FYI!</span> We are on 24/7. We understand your needs and we will ensure you get justic & broaden your knowledge.<br> PARTNER WITH US::</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" required name="numbers"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Organisation" required name="name of your org"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
