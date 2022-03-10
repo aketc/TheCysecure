@@ -21,7 +21,7 @@
         clear: both;
     }
     body{
-        background-image: url(images);
+        background-image:url(Images/pexels-miguel-á-padriñán-255379.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -40,7 +40,7 @@ box-sizing: border-box;
 
 input[type=submit] {
 width: 100%;
-background-color: #8caf4cb4;
+background-color: #041b2bb4;
 color: white;
 padding: 14px 20px;
 margin: 8px 0;
@@ -50,48 +50,27 @@ cursor: pointer;
 }
 
 input[type=submit]:hover {
-background-color:#45a049;
+background-color:#eff8f01e;
 }
 </style>
 </head>
 <body>
-    
 
-    <?php
-// define variables and set to empty values
-$name = $email = $gender = $complaint = $evidence = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $username = test_input($_POST["username"]);
-  $platform = test_input($_POST["platform"]);
-  $Evidence = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
 <h1>Report Case</h1>
-<div>
     <div class="row">
        <div class="column 1" style=
        "background-color: rgba(153, 175, 25, 0.253);"> 
         
            <h2>Insert Your Details</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
-  Name: <input type="text" name="name">
+<form method="post" action="connect.php">
+  Name: <input type="text" name="fullname">
   <br><br>
   Username: <input type="text" name="username">
   <br><br>
   Platform: Facebook<input type="checkbox" name="Fb" id="Fb"><span>Twitter: <input type="checkbox" name="Fb" id="Fb"></span>
   <span>Instagram: <input type="checkbox" name="Fb" id="Fb"></span><span>Youtube</span>
   <br><br>
-  Evidence: <input type="file" name="pdf,png,jpg,svg,mp4" id="pdf,png,jpg,svg,mp4">
+  Comment: <input type="file" name="pdf,png,jpg,svg,mp4" id="pdf,png,jpg,svg,mp4">
   <br><br>
   Gender:
   <input type="radio" name="gender" value="female">Female
@@ -101,54 +80,10 @@ function test_input($data) {
   <input type="submit" name="submit" value="Submit">  
 </form>
 </div>
-
-<?php
-    <div class="row">
-       <div class="column 1" style=
-       "background-color: rgba(152, 175, 25, 0.548);"> 
-        
-           <h2>Insert User Detail</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
-  Username: <input type="text" name="username">
-  <br><br>
-  Platform: Facebook<input type="checkbox" name="Fb" id="Fb"><span>Twitter: <input type="checkbox" name="Fb" id="Fb"></span>
-  <span>Instagram: <input type="checkbox" name="Fb" id="Fb"></span><span>Youtube</span>
-  <br><br>
- comment: <input type="text" name="comments" id="comments>
- <br>
-  Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
+</div>
 </div>
 
-<?php
-<!-- echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?> -->
 
-<!-- echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?> -->
 
         
      
