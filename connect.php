@@ -2,7 +2,7 @@
 $fullname= $_POST['fullname']
 $username= $_POST['username']
 $platform= $_POST['platform']
-$comment= $_POST['evidence']
+$evidence= $_POST['evidence']
 $age= $_POST['age']
 $gender= $_POST['gender']
 
@@ -20,7 +20,7 @@ if($conn->connect_error){
  $stmt->(close);
  $conn->(close);
 
- .
+ 
 }  
 }
 
